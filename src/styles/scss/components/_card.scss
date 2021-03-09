@@ -1,0 +1,83 @@
+.card {
+    display: grid;
+    margin-bottom: 32px;
+    padding: 0 24px;
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    background-color: #fff;
+    border-radius: 13px;
+}
+
+.card--friends {
+    grid-area: left-card;
+    margin-left: 50px;
+}
+.card--visitors {
+    grid-area: middle-card;
+    margin-right: 32px;
+    margin-left: 32px;
+}
+.card--folowers {
+    grid-area: right-card;
+    margin-right: 45px;
+}
+
+.card__title {
+    font-size: $primary-text;
+    line-height: 24px;
+    color: #4F4F4F;
+    
+}
+
+.card__dots {
+    position: relative;
+    justify-self: flex-end;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: #979797;
+    cursor: pointer;
+   
+}
+
+.card__dots:before {
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    top: 0;
+    left: -9px;
+    border-radius: 50%;
+    background-color: #979797;
+}
+
+.card__dots:after {
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    top: 0;
+    left: 9px;
+    border-radius: 50%;
+    background-color: #979797;
+}
+
+.card__people {
+    font-size: $primary-text;
+    line-height: 24px;
+    color: #4F4F4F;
+}
+
+.card__procent {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: $primary-text;
+    line-height: 24px;
+    color: #979797;
+}
+
+.card__procent-text {
+    margin-right: 9px;
+}

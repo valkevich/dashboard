@@ -1,0 +1,71 @@
+.audience {
+    display: grid;
+    margin-bottom: 32px;
+    padding: 27px 22px 22px 24px;
+    margin-left: 50px;
+    grid-area: audience;
+    background-color: #fff;
+    border-radius: 13px;
+    align-items: center;
+    justify-content: space-between;
+    grid-template-columns:repeat(3, 1fr);
+    grid-template-rows: 30px 1fr;
+    grid-template-areas: "audience-title calendar checkbox"
+                         "audience-graphic audience-graphic audience-graphic";
+}
+
+.audience__title {
+    grid-area: audience-title;
+    font-size: $primary-text;
+    font-weight: bold;
+    line-height: 24px;
+    color: #4F4F4F;
+}
+
+.audience__calendar {
+    display: flex;
+    align-items: center;
+    justify-self: flex-end;
+}
+
+.audience__arrow {
+    position: relative;
+    display: block;
+    margin-left: 10px;
+    width: 8px;
+    height: 1px;
+    background: #5B5B5B;
+    transform: rotate(45deg);
+    cursor: pointer;
+}
+
+.audience__arrow::after {
+    content: "";
+    position: absolute;
+    bottom: 4px;
+    left: 4px;
+    width: 8px;
+    height: 1px;
+    background: #5B5B5B;
+    transform: rotate(-90deg);
+}
+
+.audience-checkbox {
+    display: flex;
+    justify-self: flex-end;
+
+}
+
+.audience__text {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    color: #4F4F4F;
+}
+
+.audience__graphic {
+    width: 100%;
+    margin-top: 25px;
+    justify-content: flex-start;
+    grid-area: audience-graphic ;
+}

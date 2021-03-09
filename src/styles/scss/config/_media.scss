@@ -1,0 +1,165 @@
+@media screen and (max-width: 1025px) {
+    .wrap__bg--double {
+        display: none;
+    }
+
+    .wrap__bg--single {
+        display: none;
+    }
+
+    .wrap {
+        top: 0;
+        left: 0;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .app {
+        grid-template-columns: 1fr;
+        grid-template-rows: 100px 200px 200px 200px 200px 300px 304px 1fr 1fr;
+        grid-template-areas: "nav"
+                             "header"
+                             "left-card"
+                             "middle-card"
+                             "right-card"
+                             "audience"
+                             "reach"
+                             "gender"
+                             "geo";
+    }
+
+    .nav {
+        display: flex;
+        padding: 0 20px;
+        width: 100%;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .nav__link::before {
+        display: none;
+    }
+
+    .toggle-button {
+      display: none;
+    }
+
+    .card--friends {
+        margin-left: 32px;
+        margin-right: 32px;
+    }
+
+    .card--folowers {
+        margin-left: 32px;
+        margin-right: 32px;
+    }
+
+    .audience {
+        margin-left: 32px;
+        margin-right: 32px;
+    }
+    
+    .reach {
+        margin-left: 32px;
+        margin-right: 32px;
+    }
+
+    .gender {
+        margin-left: 32px;
+        margin-right: 32px;
+    }
+
+    .geo {
+        margin-left: 32px;
+        margin-right: 32px;
+    }
+
+    
+
+}
+
+@media screen and (max-width: 767px) {
+    .nav {
+        display: none;
+    }
+    
+    .gamburger {
+        position: fixed;
+        top: 40px;
+        right: 15px;
+        display: block;
+        width: 20px;
+        height: 1px;
+        background-color: #000;
+    }
+
+    .gamburger::before {
+        content: "";
+        position: relative;
+        top: -5px;
+        right: 0;
+        display: block;
+        width: 20px;
+        height: 1px;
+        background-color: #000;
+    }
+
+    .gamburger::after {
+        content: "";
+        position: relative;
+        top: 5px;
+        right: 0;
+        display: block;
+        width: 20px;
+        height: 1px;
+        background-color: #000;
+    }
+
+    .app {
+        grid-template-rows: 20px 1fr 200px 200px 200px 300px 304px 1fr 1fr;
+    }
+
+    header {
+        display: flex;
+        padding: 0;
+        flex-direction: column;
+        padding-bottom: 20px;
+        margin-bottom: 32px;
+    }
+
+    .header__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    .header__title {
+        margin: 0;
+        margin-bottom: 20px;
+    }
+    
+    .search {
+        margin: 0;
+        margin-bottom: 20px;
+    }
+    
+    .audience__title {
+        font-size: 15px;
+        margin-right: 10px;
+    }
+
+    .audience-checkbox {
+        display: none;
+    }
+
+    .gender__title {
+        font-size: 15px;
+        margin-right: 10px;
+    }
+}
+
+@media screen and (max-width: 479px) {
+
+}

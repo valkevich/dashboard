@@ -1,0 +1,15 @@
+.app {
+    display: grid;
+    margin: 0 auto;
+    max-width: 1280px;
+    min-height: 880px;
+    z-index: 10;
+    background-color: #EFF3F9;;
+    border: 1px solid #EBEBEB;
+    grid-template-columns: 80px repeat(3, 1fr);
+    grid-template-rows: 120px 150px 304px 1fr;
+    grid-template-areas: "nav header header header"
+                         "nav left-card middle-card right-card"
+                         "nav audience audience reach"
+                         "nav gender gender geo";
+}

@@ -1,0 +1,54 @@
+.reach {
+    margin: 0 45px 32px 32px;
+    padding: 22px 15px 31px 23px;
+    grid-area: reach;
+    border-radius: 13px;
+    background-color: #fff;
+}
+
+.reach__title {
+    margin-bottom: 38px;
+    font-size: $primary-text;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+    color: #4F4F4F;
+}
+
+.reach__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.reach__discription {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 14px;
+    color: #4F4F4F;
+}
+
+.reach__desktop {
+    display: flex;
+}
+
+.desktop__space{
+    margin-right: 9px;
+    margin-bottom: 11px;
+    width: 16px;
+    height: 16px;
+    background-color: #E786D7;
+    border-radius: 5px;
+}
+
+.reach__mobile {
+    display: flex;
+}
+
+.mobile__space{
+    margin-right: 9px;
+    width: 16px;
+    height: 16px;
+    background-color: #7F7FD5;
+    border-radius: 5px;
+}

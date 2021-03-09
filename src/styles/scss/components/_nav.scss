@@ -1,0 +1,102 @@
+.nav {
+    display: grid;
+    margin-right: 50px;
+    padding-top: 30px;
+    width: 80px;
+    height: 100%;
+    grid-template-rows: 1fr repeat(7, 65px) 1fr;
+    background-color: #fff;
+    grid-area: nav;
+}
+
+.gaburger {
+    display: none;
+}
+
+.nav__link {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+}
+
+.nav__link::before {
+    position: absolute;
+    visibility: hidden;
+    content: "";
+    width: 4px;
+    height: 50px;
+    left: 0;
+    top: 100% - calc(50% + 25px);
+    background-color: #7F7FD5;
+    opacity: 0;
+    transition: all ease .5s;
+    border-radius: 0 8px 8px 0;
+}
+
+
+.nav__link:hover::before {
+    visibility: visible;
+    opacity: 1;
+}
+
+.nav__link:first-child, .nav__link:last-child{
+    height: 65px;
+}
+
+.nav__link:last-child {
+    align-self: flex-end;
+    margin-bottom: 30px;
+}
+
+.nav__link svg {
+    fill: #DFE6F1;
+    transition: fill ease .5s;
+}
+
+.nav__link:hover svg {
+    fill: #7F7FD5;
+}
+
+.nav__logo {
+    width: 51px;
+    height: 35px;
+}
+
+.toggle-button {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 30px;
+    background: #ffffff;
+    border: 0.5px solid #4F4F4F;
+    border-radius: 50px;
+    outline: none;
+    cursor: pointer;
+    appearance: none;
+    transition: all 0.3s cubic-bezier(0.2, 0.85, 0.32, 1.2);
+  }
+
+.toggle-button::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 4px;
+    top: 4px;
+    width: 20px;
+    height: 20px;
+    background-image: url(../../../images/icons/logo.png) no-repeat center;
+    background-color: #7F7FD5;
+    border-radius: 50%;
+    transform: translateX(0);
+    transition: all 0.3s cubic-bezier(0.2, 0.85, 0.32, 1.2);
+  }
+
+  .toggle-button:checked::after {
+    transform: translateX(calc(100% + 10px));
+    background-color: #fff;  
+  }
+  .toggle-button:checked {
+    background-color: #7F7FD5;
+  }

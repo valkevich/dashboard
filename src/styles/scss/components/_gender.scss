@@ -1,0 +1,65 @@
+.gender {
+    margin: 0 45px  40px 50px;
+    padding: 23px 35px 10px 24px;
+    border-radius: 13px;
+    grid-area: gender;
+    background-color: #fff;
+}
+
+.gender__content {
+    display: flex;
+    margin-bottom: 32px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.gender__title {
+    font-weight: bold;
+    font-size: $primary-text;
+    line-height: 24px;
+    color: #4F4F4F;
+}
+
+.gender__choice{
+    display: flex;
+    align-items: center;
+}
+
+.gender__men {
+    display: block;
+    margin-right: 8px;
+    width: 16px;
+    height: 16px;
+    background-color: #7F7FD5;
+    border-radius: 5px;
+}
+
+.men__text {
+    margin-right: 10px;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 14px;
+    color: #4F4F4F;
+    text-transform: lowercase;
+}
+
+.gender__women {
+    display: block;
+    margin-right: 8px;
+    width: 16px;
+    height: 16px;
+    background-color: #E786D7;
+    border-radius: 5px;
+}
+
+.women__text {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 14px;
+    color: #4F4F4F;
+    text-transform: lowercase;
+}
+
+.gender__graphic {
+    width: 100%;
+}

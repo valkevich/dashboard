@@ -1,0 +1,27 @@
+body {
+    font-family: 'Red Hat Text', sans-serif;
+}
+
+.wrap {
+    position: relative;
+    top: 160px;
+    left: 0;
+    max-width: 1440px;
+    margin: 0 auto;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.wrap__bg--double {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+.wrap__bg--single {
+    position: absolute;
+    top: 950px;
+    right: 0;
+    z-index: 20;
+}

@@ -1,0 +1,40 @@
+.geo {
+    margin: 0 45px  40px 0;
+    padding: 23px 35px 10px 24px;
+    border-radius: 13px;
+    grid-area: geo;
+    background-color: #fff;
+}
+
+.geo__content {
+    display: flex;
+    margin-bottom: 32px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.geo__title {
+    font-weight: bold;
+    font-size: $primary-text;
+    line-height: 24px;
+    color: #4F4F4F;
+}
+
+.geo__country {
+    margin-right: 8px;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 14px;
+    color: #4F4F4F;
+}
+
+.geo__city {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 14px;
+    color: #979797
+}
+
+.geo__graphic {
+    width: 100%;
+}
